@@ -61,7 +61,10 @@ pdf.cell(103,15,"Result",1,align="C")
 pdf.cell(83,15,"Pass",1,align="C",new_x="LMARGIN",new_y="NEXT")
 #Division
 pdf.cell(103,15,"Division",1,align="C")
-pdf.cell(83,15,"99.2",1,align="C",new_x="LMARGIN",new_y="NEXT")
+pdf.cell(83,15,"I",1,align="C",new_x="LMARGIN",new_y="NEXT")
+#Remarks
+pdf.cell(103,15,"Remarks",1,align="C")
+pdf.cell(83,15,"Very obedient & attentive child",1,align="C",new_x="LMARGIN",new_y="NEXT")
 
 
 
