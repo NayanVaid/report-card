@@ -8,13 +8,13 @@ class PDF(FPDF):
         self.cell(100, 10, "Ramjas Public School Day Boarding", align="C")
         self.ln(10)
         self.cell(50)
-        self.cell(100, 10, "Anand Parbat New Delhi-110009", align="C")
+        self.cell(100, 10, "Anand Parbat New Delhi-110005", align="C")
         self.ln(35)
 
 pdf = PDF()
 pdf.add_page()
 #Set image
-pdf.image("hiten.jpeg", x=160, y=55,h=30,w=30)
+pdf.image("hiten.jpeg", x=165, y=55,h=30,w=30,)
 #Set watermark
 with pdf.local_context(fill_opacity=0.25):
     pdf.image( "images.jpeg", x=55,y=108.5,h=pdf.eph/2,w=pdf.epw/2)
@@ -22,9 +22,9 @@ with pdf.local_context(fill_opacity=0.25):
 
 pdf.set_font('helvetica', size=12,style="B")
 #Information
-pdf.cell(150,10,"Name: Hiten Mehra",1,new_x="LEFT",new_y="NEXT")
-pdf.cell(150,10,"Roll number: 14",1,new_x="LEFT",new_y="NEXT")
-pdf.cell(150,10,"Address: Karol Bagh",1,new_x="LEFT",new_y="NEXT")
+pdf.cell(155,10,"Name: Hiten Mehra",1,new_x="LEFT",new_y="NEXT")
+pdf.cell(155,10,"Roll number: 14",1,new_x="LEFT",new_y="NEXT")
+pdf.cell(155,10,"Address: Karol Bagh",1,new_x="LEFT",new_y="NEXT")
 pdf.ln(13)
 #Heading
 pdf.cell(20,15,"S.No.",1,align="C")
